@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- SEO => Search Engine Optimation -->
+        <title>Ignasius Yuda Adhitia</title>
+        <link rel="shortcut icon" type="image/jpg" href="assets/images/favicon.ico"/>
+        <style>
+            @font-face {
+                font-family: NotoSans-Regular;
+                src: url(assets/fonts/NotoSans-Regular.ttf);
+            }
+
+            @font-face {
+                font-family: RobotoSlab-Light;
+                src: url(assets/fonts/RobotoSlab-Light.ttf);
+            }
+
+            body {
+                font-family: NotoSans-Regular;
+                color: #525252;
+            }
+
+            h2 {
+                font-family: RobotoSlab-Light;
+                color: #1e2537;
+            }
+
+            hr {
+                border: 1px dashed #1e2537;
+            }
+
+            .dot1 {
+                margin-right: 5px;
+                height: 10px;
+                width: 10px;
+                background-color: #1e2537;
+                border-radius: 50%;
+                display: inline-block;
+            }
+            .dot2 {
+                margin-right: 5px;
+                height: 10px;
+                width: 10px;
+                background-color: #808388;
+                border-radius: 50%;
+                display: inline-block;
+            }
+        </style>
+    </head>
+    <body style="padding: 0px 100px">
+        <div class="header" style="background-color: #1e2537; height: 25px;"></div>
+        <div class="main">
+            <!-- label resume -->
+            <div class="label" style="display: flex; background-color: #fffff;">
+                <!-- Left content -->
+                <div style="flex: 1; max-width: 33.33%; text-align: right;">
+                    <div class="resume" style="height: 25px; width: 100px; background-color: #1e2537; display: inline-block; margin-right: 45px; font-family: RobotoSlab-Light; text-align: center; color: #fbfcff">RESUME</div>
+                </div>
+            
+                <!-- Right content -->
+                <div style="flex: 1; text-align: right;">
+                    <div onclick="resume()" style="height: 25px; width: 150px; background-color: #e2e2e2; display: inline-block; font-family: RobotoSlab-Light; text-align: center; color: #1e2537">MY RESUME</div>
+                    <div onclick="form()" style="height: 25px; width: 150px; margin: 0 0 ; background-color: #e2e2e2; display: inline-block; font-family: RobotoSlab-Light; text-align: center; color: #1e2537">UPDATE PROFILE</div>
+                </div>
+            </div>
+            <div id="form" style="display: none;">
+                <div style="height: 25px; background: #1e2537; text-align: center; font-family: RobotoSlab-Right; color: #fbfcff;">UPDATE YOUR PROFILE</div>
+                <div id="form" style="display: flex; background-color: #e2e2e2; margin: 15px 15px; padding: 15px 15px;">
+                    <!-- Left content -->
+                    <div style="flex: 1; max-width: 30%;">
+                        <div style="margin: 5px 5px;"><strong>NAME</strong></div>
+                        <div style="margin: 5px 5px;"><strong>DATE OF BIRTH</strong></div>
+                        <div style="margin: 5px 5px;"><strong>ADDRESS</strong></div>
+                    </div>
+                
+                    <!-- Right content -->
+                    <div style="flex: 1;">
+                        <div><input type="text" id="myName1" value="Ignasius Yuda Adhitia" style="width: 75%; margin: 5px 5px;"></div>
+                        <div><input type="text" id="myDate1" value="30 July 1987" style="width: 75%; margin: 5px 5px;"></div>
+                        <div><input type="text" id="myAddress1" value="Jl. RS Sekar Kamulyan No. 1512 Cigugur, Kuningan, Jawa Barat - INDONESIA" style="width: 75%; margin: 5px 5px;"></div>
+                        <div onclick="submit()" style="margin: 15px 5px; height: 25px; width: 100px; background: #1e2537; text-align: center; font-family: RobotoSlab-Right; color: #fbfcff;">SUBMIT</div>
+                    </div>
+                </div>
+                </div>
+                </div>
+            <div id="resume" class="content" style="display: flex;">
+                <!-- Left content -->
+                <div class="left-content" style="flex: 1; max-width: 33.33%;">
+                    <div class="profile-photo" style="padding: 15px 15px; height: 100px; background-color: #1e2537; text-align: right;">
+                        <span>
+                        <img class="manImg" src="assets/images/adhitia.jpg" style="width: 125px; border-radius: 50%; border: 10px solid #fbfcff; margin-top: 40px; margin-right: 5px;"></img>
+                    </span>
+                    </div>
+                    <div class="profile" style="margin-top: 50px; padding: 15px 15px; text-align: right;">
+                    <h2>PROFILE</h2>
+                    <hr>
+                    <strong>NAME</strong>
+                    <div id="myName2" class="name" value=>Ignasius Yuda Adhitia
+                    </div>
+                    <br>
+                    <br>
+                    <strong>DATE OF BIRTH</strong>
+                    <div id="myDate2" class="date">30 July 1987
+                    </div> 
+                    <br>
+                    <br>
+                    <strong>ADDRESS</strong>
+                    <div id="myAddress2">Jl. RS Sekar Kamulyan No. 1512 Cigugur, Kuningan, Jawa Barat - INDONESIA</div>
+                    <br>
+                    <br>
+                    <h2>CONTACT</h2>
+                    <hr>
+                    <div style="display: flex;">
+                        <!-- Left content -->
+                        <div style="flex: 1;">
+                            <strong>PHONE NUMBER</strong>
+                            <br>0888 220 4001
+                        </div>
+                    
+                        <!-- Right content -->
+                        <div style="flex: 1; max-width: 20px;">
+                            <img class="manImg" src="assets/images/phone.png" style="width: 20px; padding: 10px 10px;">
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div style="display: flex;">
+                        <!-- Left content -->
+                        <div style="flex: 1;">
+                            <strong>EMAIL</strong>
+                            <br>ignasius.yuda.adhitia@gmail.com
+                        </div>
+                    
+                        <!-- Right content -->
+                        <div style="flex: 1; max-width: 20px;">
+                            <img class="manImg" src="assets/images/email.png" style="width: 20px; padding: 10px 10px;">
+                        </div>
+                    </div>
+                    <br>
+                    <h2>SOCIAL</h2>
+                    <hr>
+                    <div style="display: flex;">
+                        <!-- Left content -->
+                        <div style="flex: 1;">
+                            <strong>INSTAGRAM</strong>
+                            <br>@ignasiusadhitia
+                        </div>
+                    
+                        <!-- Right content -->
+                        <div style="flex: 1; max-width: 20px;">
+                            <img class="manImg" src="assets/images/insta.png" style="width: 20px; padding: 10px 10px;">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            
+                <!-- Right content -->
+                <div class="right-content" style="flex: 1;">
+                    <div class="name" style="padding: 15px 15px; height: 100px; background-color: #1e2537; color:#fbfcff; font-family: RobotoSlab-Light;">
+                    <span style="font-size: 40px;">IGNASIUS
+                    <br> YUDA ADHITIA
+                    </span>
+                    </div>
+                    <div class="occupation" style="padding: 15px 15px;">
+                        <h2>PIANO TEACHER</h2>
+                        <hr style="border: 1px solid #1e2537;">
+                    </div>
+                    <div class="experiences" style="margin: 0px 15px; padding: 15px 15px; background-color: #e2e2e2;">
+                        <h2>
+                            <img class="manImg" src="assets/images/work.png" style="width: 20px; padding-right: 20px;">WORK EXPERIENCES
+                        </h2>
+                        <hr>
+                        <div style="display: flex;">
+                            <!-- Left content -->
+                            <div style="flex: 1; padding-right: 5px;">
+                                <span>
+                                    <strong>PRIVATE PIANO STUDIO</strong>
+                                    <br>2015-present
+                                </span>
+                                <br>
+                                <br>
+                                <br>
+                                <span>
+                                    <strong>GEREJA KATOLIK KRISTUS RAJA CIGUGUR</strong>
+                                    <br>2015-present
+                                </span>
+                            </div>
+                        
+                            <!-- Right content -->
+                            <div style="flex: 1;">
+                                <span>
+                                    <strong>OWNER AND INSTRUCTOR</strong>
+                                    <br>Giving piano lesson to kids, teens, and adult beginner.
+                                </span>
+                                <br>
+                                <br>
+                                <span>
+                                    <strong>VOLUNTEER MUSICIAN</strong>
+                                    <br>
+                                    <br>Organist and choral rehearsals assistant.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="education" style="margin: 15px 15px; padding: 15px 15px; background-color: #e2e2e2;">
+                        <h2>
+                            <img class="manImg" src="assets/images/education.png" style="width: 20px; padding-right: 20px;">EDUCATION
+                        </h2>
+                        <hr>
+                        <div style="display: flex;">
+                            <!-- Left content -->
+                            <div style="flex: 1;">
+                                <span>
+                                    <strong>HIGH SCHOOL DIPLOMA</strong>
+                                    <br>2007
+                                </span>
+                            </div>
+                        
+                            <!-- Right content -->
+                            <div style="flex: 1;">
+                                <span>
+                                    <strong>SMA NEGERI 3 KUNINGAN</strong>
+                                    <br>Kuningan, Jawa Barat, Indonesia
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills" style="margin: 15px 15px; padding: 15px 15px; background-color: #e2e2e2;">
+                        <h2>
+                            <img class="manImg" src="assets/images/skill.png" style="width: 20px; padding-right: 20px;">SKILLS
+                        </h2>
+                        <hr>
+                        <div style="display: flex;">
+                            <!-- Left content -->
+                            <div style="flex: 1;">
+                                <span>
+                                    <strong>PROFESIONAL SKILLS</strong>
+                                    <div style="display: flex;">
+                                        <!-- Left content -->
+                                        <div style="flex: 1; padding-top: 15px;">Profesional skill A
+                                            <br>Profesional skill B
+                                            <br>Profesional skill C
+                                            <br>Profesional skill D
+                                            <br>Profesional skill E
+                                            <br>Profesional skill F
+                                        </div>
+                                    
+                                        <!-- Right content -->
+                                        <div style="flex: 1; padding-top: 15px; padding-left: 45px; text-align: left;"><span id ="dot31" class="dot2"></span><span id ="dot32" class="dot2"></span><span id ="dot33" class="dot2"></span><span id ="dot34" class="dot2"></span><span id ="dot35" class="dot2"></span>
+                                            <br><span id ="dot36" class="dot2"></span><span id ="dot37" class="dot2"></span><span id ="dot38" class="dot2"></span><span id ="dot39" class="dot2"></span><span id ="dot40" class="dot2"></span>
+                                            <br><span id ="dot41" class="dot2"></span><span id ="dot42" class="dot2"></span><span id ="dot43" class="dot2"></span><span id ="dot44" class="dot2"></span><span id ="dot45" class="dot2"></span>
+                                            <br><span id ="dot46" class="dot2"></span><span id ="dot47" class="dot2"></span><span id ="dot48" class="dot2"></span><span id ="dot49" class="dot2"></span><span id ="dot50" class="dot2"></span>
+                                            <br><span id ="dot51" class="dot2"></span><span id ="dot52" class="dot2"></span><span id ="dot53" class="dot2"></span><span id ="dot54" class="dot2"></span><span id ="dot55" class="dot2"></span>
+                                            <br><span id ="dot56" class="dot2"></span><span id ="dot57" class="dot2"></span><span id ="dot58" class="dot2"></span><span id ="dot59" class="dot2"></span><span id ="dot60" class="dot2"></span>
+                                        </div>
+                                    </div>
+                                </span>
+                            </div>
+                        
+                            <!-- Right content -->
+                            <div style="flex: 1;">
+                                <div style="display: flex;">
+                                    <!-- Left content -->
+                                    <div style="flex: 1;">
+                                        <span>
+                                            <strong>PERSONAL SKILLS</strong>
+                                            <div style="display: flex;">
+                                                <!-- Left content -->
+                                                <div style="flex: 1; padding-top: 15px;">Organization
+                                                    <br>Communication
+                                                    <br>Time Keeping
+                                                    <br>Team Player
+                                                    <br>Commitment
+                                                    <br>Multitasking
+                                                </div>
+                                            
+                                                <!-- Right content -->
+                                                <div style="flex: 1; padding-top: 15px; padding-left: 45px; text-align: left;"><span id ="dot1" class="dot2"></span><span id ="dot2" class="dot2"></span><span id ="dot3" class="dot2"></span><span id ="dot4" class="dot2"></span><span id ="dot5" class="dot2"></span>
+                                                    <br><span id ="dot6" class="dot2"></span><span id ="dot7" class="dot2"></span><span id ="dot8" class="dot2"></span><span id ="dot9" class="dot2"></span><span id ="dot10" class="dot2"></span>
+                                                    <br><span id ="dot11" class="dot2"></span><span id ="dot12" class="dot2"></span><span id ="dot13" class="dot2"></span><span id ="dot14" class="dot2"></span><span id ="dot15" class="dot2"></span>
+                                                    <br><span id ="dot16" class="dot2"></span><span id ="dot17" class="dot2"></span><span id ="dot18" class="dot2"></span><span id ="dot19" class="dot2"></span><span id ="dot20" class="dot2"></span>
+                                                    <br><span id ="dot21" class="dot2"></span><span id ="dot22" class="dot2"></span><span id ="dot23" class="dot2"></span><span id ="dot24" class="dot2"></span><span id ="dot25" class="dot2"></span>
+                                                    <br><span id ="dot26" class="dot2"></span><span id ="dot27" class="dot2"></span><span id ="dot28" class="dot2"></span><span id ="dot29" class="dot2"></span><span id ="dot30" class="dot2"></span>
+                                                </div>
+                                            </div>
+                                        </span>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div id="form" style="display: none;">
+                <div style="height: 25px; background: #1e2537; text-align: center; font-family: RobotoSlab-Right; color: #fbfcff;">UPDATE YOUR PROFILE</div>
+                <div id="form" style="display: flex; background-color: #e2e2e2; margin: 15px 15px; padding: 15px 15px;">
+                    <!-- Left content -->
+                    <div style="flex: 1; max-width: 30%;">
+                        <div style="margin: 5px 5px;"><strong>NAME</strong></div>
+                        <div style="margin: 5px 5px;"><strong>DATE OF BIRTH</strong></div>
+                        <div style="margin: 5px 5px;"><strong>ADDRESS</strong></div>
+                    </div>
+                
+                    <!-- Right content -->
+                    <div style="flex: 1;">
+                        <div><input type="text" id="myName1" value="Ignasius Yuda Adhitia" style="width: 75%; margin: 5px 5px;"></div>
+                        <div><input type="text" id="myDate1" value="30 July 1987" style="width: 75%; margin: 5px 5px;"></div>
+                        <div><input type="text" id="myAddress1" value="Jl. RS Sekar Kamulyan No. 1512 Cigugur, Kuningan, Jawa Barat - INDONESIA" style="width: 75%; margin: 5px 5px;"></div>
+                        <div onclick="submit()" style="margin: 15px 5px; height: 25px; width: 100px; background: #1e2537; text-align: center; font-family: RobotoSlab-Right; color: #fbfcff;">SUBMIT</div>
+                    </div>
+                </div>
+        </div>
+        <script>
+            function resume() {
+                document.getElementById("myName2").innerHTML = "Ignasius Yuda Adhitia";
+                document.getElementById("myDate2").innerHTML = "30 July 1987";
+                document.getElementById("myAddress2").innerHTML = "Jl. RS Sekar Kamulyan No. 1512 Cigugur, Kuningan, Jawa Barat - INDONESIA";
+                document.getElementById("form").style.display = "none";
+                document.getElementById("resume").style.visibility = "visible";
+            }
+            function form() {
+                document.getElementById("form").style.display = "block";
+                document.getElementById("resume").style.visibility = "hidden";
+            }
+            function submit() {
+                var x = document.getElementById("myName1").value;
+                document.getElementById("myName2").innerHTML = x;
+                var x = document.getElementById("myDate1").value;
+                document.getElementById("myDate2").innerHTML = x;
+                var x = document.getElementById("myAddress1").value;
+                document.getElementById("myAddress2").innerHTML = x;
+                document.getElementById("form").style.display = "none";
+                document.getElementById("resume").style.visibility = "visible";
+            }
+            var dot1 = document.getElementById('dot1'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot1.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot1.style.backgroundColor = color;
+            }
+            var dot2 = document.getElementById('dot2'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot2.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot2.style.backgroundColor = color;
+            }
+            var dot3 = document.getElementById('dot3'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot3.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot3.style.backgroundColor = color;
+            }
+            var dot4 = document.getElementById('dot4'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot4.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot4.style.backgroundColor = color;
+            }
+            var dot5 = document.getElementById('dot5'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot5.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot5.style.backgroundColor = color;
+            }
+            var dot6 = document.getElementById('dot6'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot6.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot6.style.backgroundColor = color;
+            }
+            var dot7 = document.getElementById('dot7'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot7.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot7.style.backgroundColor = color;
+            }
+            var dot8 = document.getElementById('dot8'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot8.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot8.style.backgroundColor = color;
+            }
+            var dot9 = document.getElementById('dot9'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot9.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot9.style.backgroundColor = color;
+            }
+            var dot10 = document.getElementById('dot10'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot10.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot10.style.backgroundColor = color;
+            }
+            var dot11 = document.getElementById('dot11'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot11.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot11.style.backgroundColor = color;
+            }
+            var dot12 = document.getElementById('dot12'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot12.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot12.style.backgroundColor = color;
+            }
+            var dot13 = document.getElementById('dot13'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot13.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot13.style.backgroundColor = color;
+            }
+            var dot14 = document.getElementById('dot14'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot14.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot14.style.backgroundColor = color;
+            }
+            var dot15 = document.getElementById('dot15'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot15.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot15.style.backgroundColor = color;
+            }
+            var dot16 = document.getElementById('dot16'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot16.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot16.style.backgroundColor = color;
+            }
+            var dot17 = document.getElementById('dot17'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot17.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot17.style.backgroundColor = color;
+            }
+            var dot18 = document.getElementById('dot18'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot18.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot18.style.backgroundColor = color;
+            }
+            var dot19 = document.getElementById('dot19'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot19.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot19.style.backgroundColor = color;
+            }
+            var dot20 = document.getElementById('dot20'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot20.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot20.style.backgroundColor = color;
+            }
+            var dot21 = document.getElementById('dot21'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot21.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot21.style.backgroundColor = color;
+            }
+            var dot22 = document.getElementById('dot22'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot22.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot22.style.backgroundColor = color;
+            }
+            var dot23 = document.getElementById('dot23'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot23.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot23.style.backgroundColor = color;
+            }
+            var dot24 = document.getElementById('dot24'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot24.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot24.style.backgroundColor = color;
+            }
+            var dot25 = document.getElementById('dot25'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot25.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot25.style.backgroundColor = color;
+            }
+            var dot26 = document.getElementById('dot26'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot26.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot26.style.backgroundColor = color;
+            }
+            var dot27 = document.getElementById('dot27'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot27.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot27.style.backgroundColor = color;
+            }
+            var dot28 = document.getElementById('dot28'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot28.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot28.style.backgroundColor = color;
+            }
+            var dot29 = document.getElementById('dot29'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot29.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot29.style.backgroundColor = color;
+            }
+            var dot30 = document.getElementById('dot30'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot30.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot30.style.backgroundColor = color;
+            }
+            var dot31 = document.getElementById('dot31'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot31.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot31.style.backgroundColor = color;
+            }
+            var dot32 = document.getElementById('dot32'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot32.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot32.style.backgroundColor = color;
+            }
+            var dot33 = document.getElementById('dot33'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot33.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot33.style.backgroundColor = color;
+            }
+            var dot34 = document.getElementById('dot34'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot34.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot34.style.backgroundColor = color;
+            }
+            var dot35 = document.getElementById('dot35'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot35.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot35.style.backgroundColor = color;
+            }
+            var dot36 = document.getElementById('dot36'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot36.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot36.style.backgroundColor = color;
+            }
+            var dot37 = document.getElementById('dot37'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot37.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot37.style.backgroundColor = color;
+            }
+            var dot38 = document.getElementById('dot38'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot38.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot38.style.backgroundColor = color;
+            }
+            var dot39 = document.getElementById('dot39'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot39.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot39.style.backgroundColor = color;
+            }
+            var dot40 = document.getElementById('dot40'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot40.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot40.style.backgroundColor = color;
+            }
+            var dot41 = document.getElementById('dot41'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot41.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot41.style.backgroundColor = color;
+            }
+            var dot42 = document.getElementById('dot42'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot42.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot42.style.backgroundColor = color;
+            }
+            var dot43 = document.getElementById('dot43'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot43.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot43.style.backgroundColor = color;
+            }
+            var dot44 = document.getElementById('dot44'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot44.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot44.style.backgroundColor = color;
+            }
+            var dot45 = document.getElementById('dot45'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot45.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot45.style.backgroundColor = color;
+            }
+            var dot46 = document.getElementById('dot46'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot46.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot46.style.backgroundColor = color;
+            }
+            var dot47 = document.getElementById('dot47'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot47.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot47.style.backgroundColor = color;
+            }
+            var dot48 = document.getElementById('dot48'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot48.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot48.style.backgroundColor = color;
+            }
+            var dot49 = document.getElementById('dot49'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot49.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot49.style.backgroundColor = color;
+            }
+            var dot50 = document.getElementById('dot50'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot50.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot50.style.backgroundColor = color;
+            }
+            var dot51 = document.getElementById('dot51'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot51.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot51.style.backgroundColor = color;
+            }
+            var dot52 = document.getElementById('dot52'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot52.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot52.style.backgroundColor = color;
+            }
+            var dot53 = document.getElementById('dot53'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot53.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot53.style.backgroundColor = color;
+            }
+            var dot54 = document.getElementById('dot54'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot54.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot54.style.backgroundColor = color;
+            }
+            var dot55 = document.getElementById('dot55'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot55.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot55.style.backgroundColor = color;
+            }
+            var dot56 = document.getElementById('dot56'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot56.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot56.style.backgroundColor = color;
+            }
+            var dot57 = document.getElementById('dot57'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot57.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot57.style.backgroundColor = color;
+            }
+            var dot58 = document.getElementById('dot58'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot58.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot58.style.backgroundColor = color;
+            }
+            var dot59 = document.getElementById('dot59'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot59.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot9.style.backgroundColor = color;
+            }
+            var dot60 = document.getElementById('dot60'),
+            colors = ['#808388', '#1e2537'];
+            
+            dot60.onclick = function () {
+                color = colors.shift();
+                colors.push(color);
+                dot60.style.backgroundColor = color;
+            }            
+        </script>
+        <div class="footer" style="background-color: #1e2537; height: 25px; color: #fbfcff; text-align: center; vertical-align: middle;">
+            &#169; 2021 Ignasius Yuda Adhitia
+        </div>
+    </body>
+</html>
